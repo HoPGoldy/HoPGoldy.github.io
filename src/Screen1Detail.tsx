@@ -6,7 +6,7 @@ import { NavigationBar } from './components/NavigationBar';
 
 export const Screen1Detail: Component = () => {
   return (
-    <div class='relative bg-white flex flex-col' id='anchor1'>
+    <div class='relative bg-white flex flex-col z-30' id='anchor1'>
       <PageTitle title='个人信息' summary='前端开发工程师' />
       <div class='md:w-screen py-4 md:py-9 px-9 md:px-12 flex flex-col md:flex-row justify-center items-center'>
         <div class='pb-4 md:pt-6 md:px-10 md:w-[26%] text-left'>

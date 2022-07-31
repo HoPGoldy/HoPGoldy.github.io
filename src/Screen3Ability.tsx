@@ -5,7 +5,7 @@ import { AbilityItem } from './components/AbilityItem';
 
 export const Screen3Ability: Component = () => {
   return (
-    <div class='pb-10 bg-white' id='anchor3'>
+    <div class='pb-10 bg-white z-20' id='anchor3'>
       <PageTitle title='我的能力' summary='学习优秀的技术，使用优秀的工具' />
       <For each={appConfig.abilitys}>
         {item => (<>

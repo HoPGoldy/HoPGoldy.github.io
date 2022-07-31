@@ -81,7 +81,7 @@ export const NavigationBar: Component = () => {
   return (
     <nav
       ref={barRef} 
-      class={'hidden lg:block top-0 bottom-0 right-14 z-40 ' + (fixed() ? ' fixed' : 'absolute')}
+      class={'hidden lg:block top-0 bottom-0 right-14 rel z-40 ' + (fixed() ? ' fixed' : 'absolute')}
     >
       <div class='flex flex-col flex-nowrap mt-14'>
         <For each={menus}>

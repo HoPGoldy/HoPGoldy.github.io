@@ -6,7 +6,7 @@ import { LinkItem } from './components/LinkItem';
 
 export const Screen4Project: Component = () => {
   return (
-    <div class='bg-amber-50' id='anchor4'>
+    <div class='bg-amber-50 z-20' id='anchor4'>
       <PageTitle title='我的项目' summary='学习、实践、做自己喜欢的事情' />
 
       <div class='flex flex-col md:flex-row flex-wrap justify-between my-0 mx-[10%] md:mx-[10%] xl:mx-[15%]'>
