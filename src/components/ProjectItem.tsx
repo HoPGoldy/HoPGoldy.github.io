@@ -38,7 +38,6 @@ export const ProjectItem: Component<ProjectItemProps> = (props) => {
           <a
             class='absolute left-4 bottom-4 right-4 bg-white bg-opacity-30 py-1 px-4 text-white hover:bg-opacity-40 cursor-pointer transition text-sm'
             href={props.src}
-            target='_blank'
           >查 看</a>
         </div>
       </div>
@@ -52,7 +51,6 @@ export const ProjectItem: Component<ProjectItemProps> = (props) => {
         <a
           class='md:hidden absolute left-4 bottom-4 right-4 bg-black bg-opacity-30 py-1 px-4 text-white hover:bg-opacity-40 cursor-pointer transition text-center text-sm'
           href={props.src}
-          target='_blank'
         >查 看</a>
       </div>
     </div>

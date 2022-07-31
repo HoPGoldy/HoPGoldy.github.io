@@ -26,10 +26,10 @@ export const Screen5Footer: Component = () => {
 
       <div class='text-[#a2a2a2] text-sm'>
         <div class='my-2'>
-          本网站基于 solidjs 制作, 创意灵感来源于 <a class='underline' href="http://www.pascalvangemert.nl/#/profile" target='_blank'>Pascal van Gemert 的个人网站</a>。
+          本网站基于 solidjs 制作, 创意灵感来源于 <a class='underline' href="http://www.pascalvangemert.nl/#/profile">Pascal van Gemert 的个人网站</a>。
         </div>
         <div class='my-2 mb-4'>
-          网站已开源至 <a class='underline' href="https://github.com/HoPGoldy/github-io-source">github</a>, 欢迎 star。
+          网站已开源至 <a class='underline' href="https://github.com/HoPGoldy/HoPGoldy.github.io">github</a>, 欢迎 star。
         </div>
       </div>
     </div>
