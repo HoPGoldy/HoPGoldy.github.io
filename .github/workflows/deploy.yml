@@ -1,0 +1,38 @@
+name: builder
+
+on:
+  push:
+    branches:    
+      - master
+
+jobs:
+  work:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Init Node
+      uses: actions/setup-node@v1 
+      with:
+        node-version: "14.x"
+
+    - name: Build
+      run: |
+        yarn install
+        yarn build
+
+    - name: Deploy
+      env:
+        TARGET_REPO_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
+      run: |
+        cd dist
+        # 初始化 git
+        git init
+        git config --global user.email "hopgoldy@gmail.com"
+        git config --global user.name "CI Builder"
+        # 生成并推送 commit
+        git add .
+        git commit -m "feat: UPDATE BY GITHUB ACTION"
+        git push --quiet --force https://$TARGET_REPO_TOKEN@github.com/HoPGoldy/HoPGoldy.github.io.git master:github-page
