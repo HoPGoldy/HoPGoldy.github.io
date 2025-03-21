@@ -13,6 +13,9 @@ npm run dev
 
 # 执行打包
 npm run build
+
+# 构建 docker 镜像
+npm run image
 ```
 
 正文配置项位于 [src/config.ts](src/config.ts)。
